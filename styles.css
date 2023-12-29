@@ -1,0 +1,709 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* height: 440vh; */
+    background: url('lib/hero (2).jpg') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation: background 400ms infinite;
+    scroll-behavior: smooth;
+    background-size: cover;
+}
+.divs_0 {
+    position: relative;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    transform: translate(-10%, -10%);
+    top: 10%;
+    left: 10%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    transition: all ease-in-out 400ms;
+    border-radius: 1.5vh;
+}
+.divs_1 {
+    position: relative;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    transform: translate(-90%, -10%);
+    top: 10%;
+    left: 90%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    transition: all ease-in-out 400ms;
+    border-radius: 1.5vh;
+}
+.divs_0:hover,.divs_1:hover {
+    scale: 1.1;
+    box-shadow: rgba(255, 0, 0, 0.751) 0px 18px 40px -10px;
+}
+/* @keyframes background {
+    from {
+        
+    }
+    to {
+        
+    }
+} */
+
+
+/* #d_2 {
+  top: 50%;
+}
+#d_3 {
+  top: 50%;
+}
+#d_4 {
+  top: 90%;
+}
+#d_5 {
+  top: 90%;
+}
+#d_6 {
+  top: 130%;
+}
+#d_7 {
+  top: 130%;
+}
+#d_8 {
+  top: 170%;
+}
+#d_9 {
+  top: 170%;
+} */
+
+.main_div {
+  position: absolute;
+}
+
+
+#aSide {
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  top: calc(50% - 250px);
+  right: 7%;
+}
+
+/* This styles the 3D object inserted in the aside container */
+#aSide model-viewer {
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+
+
+
+
+
+.heart3d {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 200px;
+    height: 325px;
+    transform-style: preserve-3d;
+    transform: all ease-in-out 400ms;
+    -webkit-animation: spin 15s infinite linear;
+            animation: spin 15s infinite linear;
+    z-index: 1000;
+  }
+  .heart3d [class^=rib] {
+    position: absolute;
+    opacity: 0;
+    width: 200px;
+    height: 325px;
+    border-width: 1px 1px 0 0;
+    border-radius: 50% 50% 0/40% 50% 0;
+  }
+  .heart3d [class$="1"] {
+    -webkit-animation: appear 1s 0.1s infinite alternate linear;
+            animation: appear 1s 0.1s infinite alternate linear;
+    transform: rotateY(10deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="2"] {
+    -webkit-animation: appear 1s 0.2s infinite alternate linear;
+            animation: appear 1s 0.2s infinite alternate linear;
+    transform: rotateY(20deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="3"] {
+    -webkit-animation: appear 1s 0.3s infinite alternate linear;
+            animation: appear 1s 0.3s infinite alternate linear;
+    transform: rotateY(30deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="4"] {
+    -webkit-animation: appear 1s 0.4s infinite alternate linear;
+            animation: appear 1s 0.4s infinite alternate linear;
+    transform: rotateY(40deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="5"] {
+    -webkit-animation: appear 1s 0.5s infinite alternate linear;
+            animation: appear 1s 0.5s infinite alternate linear;
+    transform: rotateY(50deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="6"] {
+    -webkit-animation: appear 1s 0.6s infinite alternate linear;
+            animation: appear 1s 0.6s infinite alternate linear;
+    transform: rotateY(60deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="7"] {
+    -webkit-animation: appear 1s 0.7s infinite alternate linear;
+            animation: appear 1s 0.7s infinite alternate linear;
+    transform: rotateY(70deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="8"] {
+    -webkit-animation: appear 1s 0.8s infinite alternate linear;
+            animation: appear 1s 0.8s infinite alternate linear;
+    transform: rotateY(80deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="9"] {
+    -webkit-animation: appear 1s 0.9s infinite alternate linear;
+            animation: appear 1s 0.9s infinite alternate linear;
+    transform: rotateY(90deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="10"] {
+    -webkit-animation: appear 1s 1s infinite alternate linear;
+            animation: appear 1s 1s infinite alternate linear;
+    transform: rotateY(100deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="11"] {
+    -webkit-animation: appear 1s 1.1s infinite alternate linear;
+            animation: appear 1s 1.1s infinite alternate linear;
+    transform: rotateY(110deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="12"] {
+    -webkit-animation: appear 1s 1.2s infinite alternate linear;
+            animation: appear 1s 1.2s infinite alternate linear;
+    transform: rotateY(120deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="13"] {
+    -webkit-animation: appear 1s 1.3s infinite alternate linear;
+            animation: appear 1s 1.3s infinite alternate linear;
+    transform: rotateY(130deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="14"] {
+    -webkit-animation: appear 1s 1.4s infinite alternate linear;
+            animation: appear 1s 1.4s infinite alternate linear;
+    transform: rotateY(140deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="15"] {
+    -webkit-animation: appear 1s 1.5s infinite alternate linear;
+            animation: appear 1s 1.5s infinite alternate linear;
+    transform: rotateY(150deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="16"] {
+    -webkit-animation: appear 1s 1.6s infinite alternate linear;
+            animation: appear 1s 1.6s infinite alternate linear;
+    transform: rotateY(160deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="17"] {
+    -webkit-animation: appear 1s 1.7s infinite alternate linear;
+            animation: appear 1s 1.7s infinite alternate linear;
+    transform: rotateY(170deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="18"] {
+    -webkit-animation: appear 1s 1.8s infinite alternate linear;
+            animation: appear 1s 1.8s infinite alternate linear;
+    transform: rotateY(180deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="19"] {
+    -webkit-animation: appear 1s 1.9s infinite alternate linear;
+            animation: appear 1s 1.9s infinite alternate linear;
+    transform: rotateY(190deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="20"] {
+    -webkit-animation: appear 1s 2s infinite alternate linear;
+            animation: appear 1s 2s infinite alternate linear;
+    transform: rotateY(200deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="21"] {
+    -webkit-animation: appear 1s 2.1s infinite alternate linear;
+            animation: appear 1s 2.1s infinite alternate linear;
+    transform: rotateY(210deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="22"] {
+    -webkit-animation: appear 1s 2.2s infinite alternate linear;
+            animation: appear 1s 2.2s infinite alternate linear;
+    transform: rotateY(220deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="23"] {
+    -webkit-animation: appear 1s 2.3s infinite alternate linear;
+            animation: appear 1s 2.3s infinite alternate linear;
+    transform: rotateY(230deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="24"] {
+    -webkit-animation: appear 1s 2.4s infinite alternate linear;
+            animation: appear 1s 2.4s infinite alternate linear;
+    transform: rotateY(240deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="25"] {
+    -webkit-animation: appear 1s 2.5s infinite alternate linear;
+            animation: appear 1s 2.5s infinite alternate linear;
+    transform: rotateY(250deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="26"] {
+    -webkit-animation: appear 1s 2.6s infinite alternate linear;
+            animation: appear 1s 2.6s infinite alternate linear;
+    transform: rotateY(260deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="27"] {
+    -webkit-animation: appear 1s 2.7s infinite alternate linear;
+            animation: appear 1s 2.7s infinite alternate linear;
+    transform: rotateY(270deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="28"] {
+    -webkit-animation: appear 1s 2.8s infinite alternate linear;
+            animation: appear 1s 2.8s infinite alternate linear;
+    transform: rotateY(280deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="29"] {
+    -webkit-animation: appear 1s 2.9s infinite alternate linear;
+            animation: appear 1s 2.9s infinite alternate linear;
+    transform: rotateY(290deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="30"] {
+    -webkit-animation: appear 1s 3s infinite alternate linear;
+            animation: appear 1s 3s infinite alternate linear;
+    transform: rotateY(300deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="31"] {
+    -webkit-animation: appear 1s 3.1s infinite alternate linear;
+            animation: appear 1s 3.1s infinite alternate linear;
+    transform: rotateY(310deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="32"] {
+    -webkit-animation: appear 1s 3.2s infinite alternate linear;
+            animation: appear 1s 3.2s infinite alternate linear;
+    transform: rotateY(320deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="33"] {
+    -webkit-animation: appear 1s 3.3s infinite alternate linear;
+            animation: appear 1s 3.3s infinite alternate linear;
+    transform: rotateY(330deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="34"] {
+    -webkit-animation: appear 1s 3.4s infinite alternate linear;
+            animation: appear 1s 3.4s infinite alternate linear;
+    transform: rotateY(340deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="35"] {
+    -webkit-animation: appear 1s 3.5s infinite alternate linear;
+            animation: appear 1s 3.5s infinite alternate linear;
+    transform: rotateY(350deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  .heart3d [class$="36"] {
+    -webkit-animation: appear 1s 3.6s infinite alternate linear;
+            animation: appear 1s 3.6s infinite alternate linear;
+    transform: rotateY(360deg) rotateZ(45deg) translateX(62px);
+    border: solid #f22613;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+    border-width: 1px 1px 0 0;
+  }
+  
+  @-webkit-keyframes spin {
+    to {
+      transform: rotateY(360deg) rotateX(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotateY(360deg) rotateX(360deg);
+    }
+  }
+  @-webkit-keyframes appear {
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes appear {
+    to {
+      opacity: 1;
+    }
+  }
+  #maintext {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12vw;
+    font-weight: 700;
+    color: #fbfbfb;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-shadow: 0px 0px 12px #fbfbfb;
+    animation: gouptext1 3s ease-in-out 15s forwards;
+    animation-iteration-count: 1;
+    opacity: 0;
+  }
+  @keyframes gouptext1 {
+    from {
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+    to {
+      top: 15%;
+      opacity: 1;
+      transform: translate(-50%,-15%);
+    }
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-size: 1rem;
+    line-height: 1.25;
+    background-color: #212121;
+  }
+  
+  .grid {
+    width: 100%;
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100vh;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    animation: come 3s ease-in-out 0s forwards;
+    animation-iteration-count: 1;
+  }
+  @keyframes come {
+    from {
+      margin-top: 100vh;
+    }
+    to {
+      margin-top: 45vh;
+    }
+  }
+  .grid-block {
+    width: 50%;
+    min-height: 11.25rem;
+    padding: 1rem;
+  }
+  
+  .image-grid {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+  }
+  
+  .image-grid .tile-link:hover .tile-img {
+    top: -1rem;
+    left: -1rem;
+  }
+  
+  .image-grid .tile-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transition-property: opacity, top, left, box-shadow;
+    transition-property: opacity, top, left, box-shadow;
+  }
+  
+  .tile-link {
+    display: block;
+  }
+  
+  .tile-link:hover .tile-img {
+    opacity: 1;
+  }
+  
+  .tile-link:hover .tile-img-link {
+    display: block;
+  }
+  
+  .tile-link:hover .tile-img-link:hover .tile-img {
+    opacity: 0.5;
+  }
+  
+  .tile-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover ;
+    height: auto;
+    opacity: 1;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.250s;
+    transition-duration: 0.250s;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+  .online {
+    display: block;
+    width: 100%;
+    object-fit: cover ;
+    height: auto;
+    opacity: 1;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.250s;
+    transition-duration: 0.250s;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+  .tile-link:hover .tile-img1 {
+    box-shadow: 5px 5px rgba(244, 170, 200, 0.4),
+      10px 10px rgba(244, 170, 200, 0.3), 15px 15px rgba(244, 170, 200, 0.2),
+      20px 20px rgba(244, 170, 200, 0.1), 25px 25px rgba(244, 170, 200, 0.05);
+  }
+  
+  .tile-link:hover .tile-img2 {
+    box-shadow: 5px 5px rgba(45, 186, 233, 0.4), 10px 10px rgba(45, 186, 233, 0.3),
+      15px 15px rgba(45, 186, 233, 0.2), 20px 20px rgba(45, 186, 233, 0.1),
+      25px 25px rgba(45, 186, 233, 0.05);
+  }
+  
+  .tile-link:hover .tile-img3 {
+    box-shadow: 5px 5px rgba(214, 221, 244, 0.4),
+      10px 10px rgba(214, 221, 244, 0.3), 15px 15px rgba(214, 221, 244, 0.2),
+      20px 20px rgba(214, 221, 244, 0.1), 25px 25px rgba(214, 221, 244, 0.05);
+  }
+  
+  .tile-link:hover .tile-img4 {
+    box-shadow: 5px 5px rgba(82, 119, 192, 0.4), 10px 10px rgba(82, 119, 192, 0.3),
+      15px 15px rgba(82, 119, 192, 0.2), 20px 20px rgba(82, 119, 192, 0.1),
+      25px 25px rgba(82, 119, 192, 0.05);
+  }
+  
+  .tile-link:hover .tile-img5 {
+    box-shadow: 5px 5px rgba(138, 218, 245, 0.4),
+      10px 10px rgba(138, 218, 245, 0.3), 15px 15px rgba(138, 218, 245, 0.2),
+      20px 20px rgba(138, 218, 245, 0.1), 25px 25px rgba(138, 218, 245, 0.05);
+  }
+  
+  .tile-link:hover .tile-img6 {
+    box-shadow: 5px 5px rgba(203, 215, 193, 0.4),
+      10px 10px rgba(203, 215, 193, 0.3), 15px 15px rgba(203, 215, 193, 0.2),
+      20px 20px rgba(203, 215, 193, 0.1), 25px 25px rgba(203, 215, 193, 0.05);
+  }
+  
+  .tile-link:hover .tile-img7 {
+    box-shadow: 5px 5px rgba(91, 209, 250, 0.4), 10px 10px rgba(91, 209, 250, 0.3),
+      15px 15px rgba(91, 209, 250, 0.2), 20px 20px rgba(91, 209, 250, 0.1),
+      25px 25px rgba(91, 209, 250, 0.05);
+  }
+  
+  .tile-link:hover .tile-img8 {
+    box-shadow: 5px 5px rgba(145, 156, 196, 0.4),
+      10px 10px rgba(145, 156, 196, 0.3), 15px 15px rgba(145, 156, 196, 0.2),
+      20px 20px rgba(145, 156, 196, 0.1), 25px 25px rgba(145, 156, 196, 0.05);
+  }
+  
+  .tile-link:hover .tile-img9 {
+    box-shadow: 5px 5px rgba(188, 97, 129, 0.4), 10px 10px rgba(188, 97, 129, 0.3),
+      15px 15px rgba(188, 97, 129, 0.2), 20px 20px rgba(188, 97, 129, 0.1),
+      25px 25px rgba(188, 97, 129, 0.05);
+  }
+  
+  .tile-link:hover .tile-img10 {
+    box-shadow: 5px 5px rgba(4, 140, 231, 0.4), 10px 10px rgba(4, 140, 231, 0.3),
+      15px 15px rgba(4, 140, 231, 0.2), 20px 20px rgba(4, 140, 231, 0.1),
+      25px 25px rgba(4, 140, 231, 0.05);
+  }
+.heart{
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+i{
+    color: red;
+    font-size:100px;
+    text-shadow:0 0 10px red, 0 0 50px red;
+    animation: heartbeat 0.8s infinite;
+}
+@keyframes heartbeat {
+    0%{
+        transform: scale(1.10);
+    }
+    30%{
+        transform: scale(1.4);
+    }
+    60%{
+        transform: scale(1.9);
+    }
+}
+.heartmain_pulse {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0%);
+  bottom: 0%;
+  margin-bottom: 10vh;
+}
+.heart {
+  height: 70px;
+  width: 70px;
+  background: #f20044;
+  position: relative;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 90px #f20044;
+  animation: heart 0.6s linear infinite;
+}
+@keyframes heart {
+  0% {
+    transform: rotate(-45deg) scale(1.07);
+  }
+  80% {
+    transform: rotate(-45deg) scale(1.0);
+  }
+  100% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  
+}
+.heart::before {
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background: #f20044;
+  top: -50%;
+  border-radius: 50px;
+}
+.heart::after {
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background: #f20044;
+  right: -50%;
+  border-radius: 50px;
+}
